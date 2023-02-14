@@ -2,17 +2,19 @@
 # define DOG_HPP
 
 #include "Animal.hpp"
+#include "Brain.hpp"
 
 class Dog : public Animal
 {
-protected:
-
+private:
+	Brain* brain;
 public:
 	Dog(void);
 	~Dog(void);
-	virtual void makeSound(void) const;
+	void makeSound(void) const;
 	Dog& operator=(const Dog &other);
 	Dog(const Dog &copy);
+	void addIdea(std::string idea);
 };
 
 #endif

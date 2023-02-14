@@ -16,15 +16,22 @@ Cat::Cat(const Cat &copy)
 Cat::Cat(void)
 {
 	this->type = "Cat";
+	this->brain = new Brain();
 	std::cout << "Cat default constructor called" << std::endl;
 }
 
 Cat::~Cat(void)
 {
+	delete this->brain;
 	std::cout << "Cat default destructor called" << std::endl;
 }
 
 void Cat::makeSound(void) const
 {
 	std::cout << "Miau" << std::endl;
+}
+
+void Cat::addIdea(std::string idea)
+{
+	this->brain->addIdea(idea);
 }
