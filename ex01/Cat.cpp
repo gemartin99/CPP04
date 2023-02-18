@@ -2,6 +2,7 @@
 
 Cat& Cat::operator=(const Cat &other)
 {
+	this->brain = other.brain;
 	std::cout << "Cat copy assignment operator called" << std::endl;
 	this->type = other.type;
 	return *this;
