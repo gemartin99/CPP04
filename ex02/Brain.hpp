@@ -10,7 +10,7 @@ private:
 	int size;
 public:
 	Brain(void);
-	~Brain(void);
+	virtual ~Brain(void);
 	Brain& operator=(const Brain &copy);
 	Brain(const Brain &copy);
 	int getSize(void) const;

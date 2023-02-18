@@ -9,7 +9,7 @@ protected:
 
 public:
 	Dog(void);
-	~Dog(void);
+	virtual ~Dog(void);
 	virtual void makeSound(void) const;
 	Dog& operator=(const Dog &other);
 	Dog(const Dog &copy);

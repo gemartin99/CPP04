@@ -9,10 +9,10 @@ protected:
 
 public:
 	WrongCat(void);
-	~WrongCat(void);
+	virtual ~WrongCat(void);
 	WrongCat& operator=(const WrongCat &other);
 	WrongCat(const WrongCat &copy);
-	virtual void makeSound(void) const;
+	void makeSound(void) const;
 };
 
 #endif
