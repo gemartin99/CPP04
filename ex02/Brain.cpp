@@ -38,7 +38,7 @@ int Brain::getSize(void) const
 void Brain::addIdea(std::string idea)
 {
 	int i = this->size;
-	if (i < 101)
+	if (i < 100)
 	{
 		this->ideas[i] = idea;
 		this->size++;

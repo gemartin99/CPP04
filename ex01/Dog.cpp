@@ -39,7 +39,7 @@ void Dog::addIdea(std::string idea)
 	this->brain->addIdea(idea);
 }
 
-std::string Cat::getIdea(int i) const
+std::string Dog::getIdea(int i) const
 {
 	return this->brain->getIdea(i);
 }

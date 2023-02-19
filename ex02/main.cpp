@@ -16,14 +16,11 @@ int main()
 	// const WrongAnimal* y = new WrongCat();
 
 	const Cat *a = new Cat();
-	const Cat *b = new Cat();
+	
 	std::cout << "aaa1" << std::endl;
 	a->addIdea("caca");
+	a->getIdea(0);
 	std::cout << "aaa" << std::endl;
-	b = a;
 	delete a;
-	std::cout << "aaa2" << std::endl;
-	b->getIdea(0);
-	std::cout << "aaa3" << std::endl;
 	return 0;
 }
