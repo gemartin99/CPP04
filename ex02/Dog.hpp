@@ -15,6 +15,7 @@ public:
 	Dog& operator=(const Dog &other);
 	Dog(const Dog &copy);
 	void addIdea(std::string idea);
+	std::string getIdea(int i) const;
 };
 
 #endif

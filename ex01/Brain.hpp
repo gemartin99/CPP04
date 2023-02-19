@@ -15,6 +15,7 @@ public:
 	Brain(const Brain &copy);
 	int getSize(void) const;
 	void addIdea(std::string idea);
+	std::string getIdea(int i) const;
 };
 
 #endif

@@ -14,7 +14,8 @@ public:
 	Cat& operator=(const Cat &other);
 	Cat(const Cat &copy);
 	void makeSound(void) const;
-	void addIdea(std::string idea);
+	void addIdea(std::string idea)const;
+	std::string getIdea(int i) const;
 };
 
 #endif

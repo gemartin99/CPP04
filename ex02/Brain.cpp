@@ -44,3 +44,10 @@ void Brain::addIdea(std::string idea)
 		this->size++;
 	}
 }
+
+std::string Brain::getIdea(int i) const
+{
+	if (i < 0 || i > 100)
+		return NULL;
+	return this->ideas[i];
+}
